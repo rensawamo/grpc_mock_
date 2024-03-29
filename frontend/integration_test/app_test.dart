@@ -11,8 +11,7 @@ class MockRepository extends Mock implements TodoRepository {}
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
   WidgetsFlutterBinding.ensureInitialized();
-
-
+  
   group('App Integration Tests', () {
     Widget createWidgetUnderTest() {
       return MaterialApp(
@@ -59,7 +58,7 @@ void main() {
     });
 
     // grpcのmockサーバがただし動くか
-     testWidgets('ダイヤログのinputが完了したらリストが4表示されているか', (tester) async {
+     testWidgets('ダイヤログのinputが完了したらリストが4つ表示されているか', (tester) async {
       // セットアップ
       await tester.pumpWidget(createWidgetUnderTest());
       await tester.pumpAndSettle();
@@ -84,5 +83,4 @@ void main() {
       expect(find.text('insertbytest'), findsOneWidget);
     });
   });
-
 }
