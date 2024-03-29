@@ -3,10 +3,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:frontend/src/app.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:mocktail/mocktail.dart';
-import '../lib/src/feature/data/todo_repository.dart';
+import 'package:flutter_grpc_common/grpc.dart';
 import 'package:integration_test/integration_test.dart';
 
-class MockRepository extends Mock implements TodoRepository {}
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
