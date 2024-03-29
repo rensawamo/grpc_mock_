@@ -9,17 +9,17 @@ class TodoService extends TodoServiceBase {
   List<Todo> todos = [
     Todo(
       id: 'sample1',
-      content: 'Sample Todo 1',
+      content: 'todo1',
       status: CompletionStatus.Incomplete,
     ),
     Todo(
       id: 'sample2',
-      content: 'Sample Todo 2',
+      content: 'todo2',
       status: CompletionStatus.Incomplete,
     ),
     Todo(
       id: 'sample3',
-      content: 'Sample Todo 3',
+      content: 'todo3',
       status: CompletionStatus.Incomplete,
     ),
   ];
