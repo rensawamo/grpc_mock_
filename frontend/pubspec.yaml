@@ -17,9 +17,9 @@ dependencies:
     path: ../grpc/client
   hooks_riverpod: 
   riverpod_annotation: 
-  json_annotation: 
+  json_annotation: ^4.8.1
   flutter_hooks: 
-  freezed_annotation: 
+  freezed_annotation: ^2.4.1
   grpc: 
   flutter_slidable: 
 
@@ -29,10 +29,10 @@ dev_dependencies:
 
   flutter_lints: 
   riverpod_lint: 
-  riverpod_generator: 
-  freezed: 
-  json_serializable:
-  build_runner: 
+  riverpod_generator: ^2.4.0
+  freezed: ^2.4.7
+  json_serializable: ^6.7.1
+  build_runner: ^2.4.9
   mocktail: ^0.3.0
   integration_test:
     sdk: flutter
