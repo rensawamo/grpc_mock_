@@ -5,8 +5,7 @@ version: 1.0.0
 publish_to: "none"
 
 environment:
-  sdk: '^3.3.0'
-
+  sdk: ">=2.19.6 <3.3.3"
 
 dependencies:
   flutter:
@@ -22,6 +21,7 @@ dependencies:
   freezed_annotation: ^2.4.1
   grpc: 
   flutter_slidable: 
+  dartz: ^0.10.1
 
 dev_dependencies:
   flutter_test:
