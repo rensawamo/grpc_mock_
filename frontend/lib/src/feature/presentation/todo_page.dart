@@ -19,18 +19,23 @@ class TodoPage extends HookConsumerWidget {
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Flutter gRPC mock'),
+          title: const Text('gRPC mock server testing'),
         ),
         floatingActionButton: FloatingActionButton(
+          key: const Key('floatingActionButton'),
           onPressed: () => {
             showDialog(
               context: context,
               builder: (BuildContext context) {
                 return AlertDialog(
+                  key: const Key('AlertDialog'),
                   title: const Text('Create a todo'),
-                  content: TextFormField(controller: controller),
+                  content: TextFormField(
+                    key: const Key('TextFormField'),
+                    controller: controller),
                   actions: <Widget>[
                     ElevatedButton(
+                      key: const Key('elevatedButton'),
                       onPressed: () async {
                         await ref
                             .read(todoRepositoryProvider)
@@ -76,6 +81,7 @@ class TodoPage extends HookConsumerWidget {
                 child: ListTile(
                   title: Text(todo.content),
                   trailing: Checkbox(
+                    key: Key(todo.id),
                     value: todo.status == CompletionStatus.Complete,
                     onChanged: (_) async {
                       ref.read(todoRepositoryProvider).updateTodo(
