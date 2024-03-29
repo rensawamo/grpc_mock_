@@ -3,7 +3,7 @@
 1. Resolving dependencies
 
 ```
-$ cd ~~ &&  dart pub get
+$ dart pub get
 ```
 
 2. Start a mock server
